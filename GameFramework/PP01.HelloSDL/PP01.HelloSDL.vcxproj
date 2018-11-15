@@ -23,7 +23,7 @@
     <ProjectGuid>{B5CBB1A6-AA84-40F1-84CA-9AA4874929AB}</ProjectGuid>
     <RootNamespace>PP01HelloSDL</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
-    <ProjectName>PP04.BasicDrawing</ProjectName>
+    <ProjectName>PP05.AnimateSprite</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
