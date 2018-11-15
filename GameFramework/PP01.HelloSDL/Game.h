@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <SDL_image.h>
 #include "SDL.h"
 
 class Game
@@ -16,8 +17,8 @@ public:
 private:
 	SDL_Texture* m_pTexture;
 	SDL_Rect m_sourceRectangle;
-	SDL_Rect m_destingationRectangle;
-	SDL_Window * m_pWindow;
-	SDL_Renderer* m_pRenderer;
+	SDL_Rect m_destinationRectangle;
+	SDL_Window * m_pWindow = 0;
+	SDL_Renderer* m_pRenderer = 0;
 	bool m_bRunning = true;
 };
