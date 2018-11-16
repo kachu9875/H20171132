@@ -1,5 +1,6 @@
 #pragma once
 #include "Player.h"
+#include "Enemy.h"
 
 class Game
 {
@@ -14,10 +15,11 @@ public:
 	bool running() { return m_bRunning; }
 private:
 	int m_currentFrame;
-	SDL_Texture* m_pTexture;
 	SDL_Window * m_pWindow = 0;
 	SDL_Renderer* m_pRenderer = 0;
 	bool m_bRunning = true;
-	GameObject m_go;
-	Player m_player;
+	std::vector<GameObject*> m_gameObjects;
+	GameObject* m_go;
+	GameObject* m_player;
+	GameObject* m_enemy;
 };

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <SDL_image.h>
 #include <map>
+#include <vector>
 #include "SDL.h"
 
 class TextureManager
