@@ -1,7 +1,5 @@
 #pragma once
-#include <iostream>
-#include <SDL_image.h>
-#include "SDL.h"
+#include "TextureManager.h"
 
 class Game
 {
@@ -15,6 +13,8 @@ public:
 	void clean();
 	bool running() { return m_bRunning; }
 private:
+	int m_currentFrame;
+	TextureManager m_textureManager;
 	SDL_Texture* m_pTexture;
 	SDL_Rect m_sourceRectangle;
 	SDL_Rect m_destinationRectangle;
