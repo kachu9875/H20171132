@@ -1,5 +1,5 @@
 #pragma once
-#include "TextureManager.h"
+#include "Player.h"
 
 class Game
 {
@@ -18,4 +18,6 @@ private:
 	SDL_Window * m_pWindow = 0;
 	SDL_Renderer* m_pRenderer = 0;
 	bool m_bRunning = true;
+	GameObject m_go;
+	Player m_player;
 };
