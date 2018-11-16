@@ -48,8 +48,9 @@ void Game::clean()
 
 void Game::handleEvents()
 {
-	SDL_Event event;
-	if (SDL_PollEvent(&event))
+	//SDL_Event event;
+	TheInputHandler::Instance()->update();
+	/*if (SDL_PollEvent(&event))
 	{
 		switch (event.type)
 		{
@@ -59,7 +60,12 @@ void Game::handleEvents()
 		default:
 			break;
 		}
-	}
+	}*/
+}
+
+void Game::quit()
+{
+	m_bRunning = false;
 }
 
 void Game::update()
