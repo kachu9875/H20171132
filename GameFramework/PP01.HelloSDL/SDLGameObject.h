@@ -17,5 +17,5 @@ protected:
 	int m_height;
 	int m_currentRow;
 	int m_currentFrame;
-	std::string m_textureID;
+	string m_textureID;
 };

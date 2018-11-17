@@ -33,7 +33,7 @@ private:
 	InputHandler();
 	static InputHandler* s_pInstance;
 	const Uint8* m_keystates;
-	std::vector<bool> m_mouseButtonStates;
+	vector<bool> m_mouseButtonStates;
 	Vector2D* m_mousePosition;
 };
 typedef InputHandler TheInputHandler;

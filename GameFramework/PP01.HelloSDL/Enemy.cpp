@@ -12,12 +12,16 @@ void Enemy::draw()
 
 void Enemy::handleInput()
 {
+	Vector2D* vec = TheInputHandler::Instance()->getMousePosition();
+	m_velocity = (*vec - m_position) / 100;
 	if (TheInputHandler::Instance()->getMouseButtonState(LEFT))
 	{
 		m_velocity.setX(10);
 	}
-	Vector2D* vec = TheInputHandler::Instance()->getMousePosition();
-	//m_velocity = (*vec - m_position) / 100;
+	else if (TheInputHandler::Instance()->getMouseButtonState(RIGHT))
+	{
+		m_velocity.setX(-10);
+	}
 }
 
 void Enemy::update()

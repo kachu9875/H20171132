@@ -30,6 +30,6 @@ private:
 	SDL_Window * m_pWindow = 0;
 	SDL_Renderer* m_pRenderer = 0;
 	bool m_bRunning = true;
-	std::vector<GameObject*> m_gameObjects;
+	vector<GameObject*> m_gameObjects;
 };
 typedef Game TheGame;

@@ -72,7 +72,6 @@ void InputHandler::update()
 			break;
 		}
 	}
-
 	/*if (event.type == SDL_KEYUP)
 	{
 		m_keystates = SDL_GetKeyboardState(0);
