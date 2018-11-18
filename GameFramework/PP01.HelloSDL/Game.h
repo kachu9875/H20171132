@@ -19,17 +19,17 @@ public:
 		if (s_pInstance == 0)
 		{
 			s_pInstance = new Game();
-			return s_pInstance;
+			//return s_pInstance;
 		}
 		return s_pInstance;
 	}
 private:
 	Game() {}
 	static Game* s_pInstance;
-	int m_currentFrame;
 	SDL_Window * m_pWindow = 0;
 	SDL_Renderer* m_pRenderer = 0;
 	bool m_bRunning = true;
 	vector<GameObject*> m_gameObjects;
+	//int m_currentFrame;
 };
 typedef Game TheGame;
