@@ -31,7 +31,7 @@ public:
 			s_pInstance = new TextureManager();
 			return s_pInstance;
 		}
-		//return s_pInstance;
+		return s_pInstance;
 	}
 };
 typedef TextureManager TheTextureManager;

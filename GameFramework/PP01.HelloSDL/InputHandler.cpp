@@ -71,6 +71,7 @@ void InputHandler::update()
 		default:
 			break;
 		}
+		
 	}
 	/*if (event.type == SDL_KEYUP)
 	{
@@ -103,6 +104,7 @@ void InputHandler::onMouseButtonDown(SDL_Event event)
 	{
 		m_mouseButtonStates[RIGHT] = true;
 	}
+	
 }
 
 void InputHandler::onMouseButtonUp(SDL_Event event)

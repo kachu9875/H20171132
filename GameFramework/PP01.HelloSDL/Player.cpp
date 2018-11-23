@@ -28,6 +28,11 @@ void Player::handleInput()
 	{
 		m_velocity.setY(2);
 	}
+	if (TheInputHandler::Instance()->getMouseButtonState(LEFT)&&delay == 0)
+	{
+		Game::Instance()->m_gameObjects.push_back(new Bullet(new LoaderParams(m_position.getX()+70, m_position.getY()+10, 64, 64, "bull")));
+		delay = 30;
+	}
 }
 
 void Player::update()
@@ -36,6 +41,10 @@ void Player::update()
 	m_velocity.setY(0);
 	handleInput(); // add our function
 	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
+	if (delay > 0)
+	{
+		delay -= 1;
+	}
 	//m_acceleration.setX(1);
 	SDLGameObject::update();
 }
